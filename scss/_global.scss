@@ -1,0 +1,5 @@
+@use './variables.scss' as *;
+
+div, p, a, label, button, ul, li {
+    font-family: $regular-text;
+}
