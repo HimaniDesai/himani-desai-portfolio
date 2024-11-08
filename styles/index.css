@@ -1,3 +1,85 @@
 div, p, a, label, button, ul, li {
   font-family: "Tahoma";
+}
+
+body {
+  margin: 0;
+}
+
+.footer__container {
+  background-image: radial-gradient(rgb(66, 25, 162), rgba(66, 25, 162, 0.8));
+  padding: 2rem 0;
+}
+.footer__container__title {
+  display: flex;
+  justify-items: flex-start;
+  padding-left: 1rem;
+  color: #FFFFFF;
+  font-family: "Tahoma";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container__title {
+    font-family: "Tahoma";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+.footer__container__section {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__container__section {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.footer__container--email {
+  display: flex;
+  justify-items: flex-start;
+}
+.footer__container--github {
+  display: flex;
+  justify-items: center;
+}
+.footer__container--linkedin {
+  display: flex;
+  justify-items: flex-end;
+}
+.footer__container--icon {
+  background-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__container--icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem;
+  }
+}
+.footer__container--link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-decoration: underline;
+  color: #FFFFFF;
+  font-family: "Tahoma";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container--link {
+    font-family: "Tahoma";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
 }/*# sourceMappingURL=index.css.map */

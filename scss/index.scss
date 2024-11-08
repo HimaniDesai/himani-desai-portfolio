@@ -1,3 +1,68 @@
 @use './global.scss' as *;
 @use './mixins.scss' as *;
 @use './variables.scss' as *;
+body{
+    margin: 0;
+}
+.footer{
+    
+    &__container{
+        background-image: radial-gradient(rgba(66, 25, 162,1), rgba(66, 25, 162, 0.8));
+        padding: 2rem 0;
+        &__title{
+            display: flex;
+            justify-items: flex-start;
+            padding-left: 1rem;
+            color: $white;
+            @include section-header-mobile;
+            @include tablet{
+                @include section-header-desktop;
+            }
+        }
+        &__section{
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            @include tablet{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        &--email{
+            display: flex;
+            justify-items: flex-start;
+        }
+        &--github{
+            display: flex;
+            justify-items: center ;
+        }
+        &--linkedin{
+            display: flex;
+            justify-items: flex-end;
+        }
+        &--icon{
+            background-color: transparent;
+            width: 2rem;
+            height: 2rem;
+            margin: 0.5rem;
+            
+            @include tablet{
+                width: 2.5rem;
+                height: 2.5rem;
+                margin: 1rem;
+
+            }
+        }
+        &--link{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            text-decoration: underline;
+            color: $white;
+            @include body-copy-mobile;
+            @include tablet{
+                @include body-copy-desktop;
+            }
+        }
+    }
+}
