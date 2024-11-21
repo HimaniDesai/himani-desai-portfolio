@@ -13,7 +13,7 @@ body {
 .footer__container__title {
   display: flex;
   justify-items: flex-start;
-  padding-left: 1rem;
+  padding-left: 2rem;
   color: #FFFFFF;
   font-family: "Tahoma";
   font-weight: 700;
@@ -37,6 +37,7 @@ body {
   .footer__container__section {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 .footer__container--email {
